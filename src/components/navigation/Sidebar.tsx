@@ -60,8 +60,6 @@ const Sidebar: React.FC<SidebarProps> = ({ role }) => {
       case 'student':
         return [
           { to: '/student', icon: <BarChart2 size={20} />, label: 'Dashboard' },
-          { to: '/student/kelola-kegiatan', icon: <FileText size={20} />, label: 'Kelola Kegiatan' },
-          { to: '/student/project', icon: <BookOpen size={20} />, label: 'project' },
           { to: '/student/kelola-sertifikasi', icon: <ClipboardCheck size={20} />, label: 'Kelola Sertifikasi' },
           { to: '/student/kelola-proyek', icon: <ClipboardCheck size={20} />, label: 'Kelola Proyek' },
           { to: '/student/profile', icon: <ClipboardCheck size={20} />, label: 'profile' },
@@ -69,10 +67,8 @@ const Sidebar: React.FC<SidebarProps> = ({ role }) => {
       case 'lecturer':
         return [
           { to: '/lecturer', icon: <LayoutGrid size={20} />, label: 'Dashboard' },
-          { to: '/lecturer/mahasiswa-bimbingan', icon: <BarChart2 size={20} />, label: 'Mahasiswa Bimbingan' },
-          { to: '/lecturer/rekomendasi-aktif', icon: <Folder size={20} />, label: 'Rekomendasi Aktif' },
-          { to: '/lecturer/ajakan-kolaborasi', icon: <Trophy size={20} />, label: 'Ajakan Kolaborasi' },
-          { to: '/lecturer/update-bimbingan', icon: <CheckCircle size={20} />, label: 'Update Bimbingan' },
+          { to: '/lecturer/pencarian-mahasiswa', icon: <Folder size={20} />, label: 'Pencarian Mahasiswa' },
+          { to: '/lecturer/kolaborasi', icon: <Trophy size={20} />, label: 'Kolaborasi' },
           { to: '/lecturer/chats', icon: <MessageCircle size={20} />, label: 'Chats' },
           { to: '/lecturer/calls', icon: <Phone size={20} />, label: 'Calls' },
         ];
@@ -82,7 +78,6 @@ const Sidebar: React.FC<SidebarProps> = ({ role }) => {
           { to: '/prodi', icon: <BarChart2 size={20} />, label: 'Dashboard' },
           { to: '/prodi/pemetaan-talenta', icon: <BookMarked size={20} />, label: 'Pemetaan Talenta' },
           { to: '/prodi/pemantauan-mahasiswa', icon: <Users size={20} />, label: 'Pemantauan Mahasiswa' },
-          { to: '/prodi/rekomendasi-proyek', icon: <FileText size={20} />, label: 'Rekomendasi Proyek' },
           { to: '/prodi/profile', icon: <User size={20} />, label: 'Profile' },
         ];
       case 'industry':
